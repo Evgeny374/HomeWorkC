@@ -70,3 +70,35 @@ Console.Clear();
 //    Console.WriteLine("Не четное "); 
 // }
 
+
+/* Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе 
+показывает все чётные числа от 1 до N. */
+
+Console.Write ("Введите число: ");
+int MaxNum = Convert.ToInt32(Console.ReadLine());
+int num = 1;
+if (MaxNum >= 0)
+{
+Console.Write ("Положительные четные числа до " + MaxNum + " это: ");
+while (num <= MaxNum)
+    {
+    if (num %2 == 0)
+    {
+        Console.Write (num + " ");
+    }
+    num +=1;
+    }
+}
+else
+{
+    Console.Write ("Отрицательные четные числа до " + MaxNum + " это: ");    
+    num = -1;
+  while (num >= MaxNum)
+    {
+    if (num %2 == 0)
+    {
+        Console.Write (num + " ");
+    }
+    num -=1;  
+    }
+}
