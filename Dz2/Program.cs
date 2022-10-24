@@ -16,13 +16,28 @@
 /*  Напишите программу, которая выводит третью цифру заданного числа или сообщает, что 
 третьей цифры нет.*/
 
-Console.Write ("Введите трехзначное число: ");
-string number  = Console.ReadLine();
-if (number.Length >= 3) 
+// Console.Write ("Введите трехзначное число: ");
+// string number  = Console.ReadLine();
+// if (number.Length >= 3) 
+// {
+//     Console.WriteLine(number[2]);
+// }
+// else 
+// {
+//     Console.Write ("Третьей цифры в числе нет");
+// }
+
+
+/* Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
+и проверяет, является ли этот день выходным.*/
+
+Console.Write ("Введите номер дня недели: ");
+int number  = int.Parse (Console.ReadLine());
+if (number == 6 || number  == 7)
 {
-    Console.WriteLine(number[2]);
+    Console.Write("Да");
 }
-else 
+else
 {
-    Console.Write ("Третьей цифры в числе нет");
+    Console.Write("Нет");
 }
